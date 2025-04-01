@@ -1,0 +1,70 @@
+:root {
+    --gray-bg: #16140f;
+    --yellow: #FFDE4C;
+    --yellow2: #FFDD55;
+}
+
+* {
+    position: relative;
+}
+
+body {
+    background: var(--yellow);
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 52px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    border-radius: 20px;
+    background: var(--gray-bg) url("../img/background.jpg") top center no-repeat;
+}
+
+.header {
+    padding: 0 48px;
+    top: -6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a {
+    display: block;
+}
+
+.header__nav {
+    padding: 0 33px 6px;
+}
+
+.header__nav__btn {
+    border: none;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.header__nav__btn_line,
+.header__nav__btn::before,
+.header__nav__btn::after {
+    display: block;
+    width: 36px;
+    height: 2px;
+    background: var(--yellow2);
+}
+
+.header__nav__btn_line {
+    margin: 8px 0;
+}
+
+.header__nav__btn::before,
+.header__nav__btn::after {
+    content: "";
+}
