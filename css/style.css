@@ -33,6 +33,13 @@ h1 {
     margin: 54px 0 0;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 .subheader {
     font-size: 24px;
     font-weight: 600;
@@ -61,6 +68,13 @@ h1 {
     border: none;
     border-radius: 20px;
     padding: 23px 40px;
+}
+
+.secion__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
 }
 
 /* header */
@@ -208,4 +222,49 @@ h1 {
 
 .main__offer__circle_text {
     text-align: center;
+}
+
+/* about */
+
+.main__about {
+    padding: 60px 0 0;
+}
+
+.main__about__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.main__about__item {
+    width: calc(100%/3);
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 90px;
+    margin-bottom: 48px;
+}
+.main__about__item::before {
+    content: "";
+    display: block;
+    background: var(--black);
+    border: 1px solid var(--yellow2);
+    border-radius: 50%;
+    width: 182px;
+    height: 182px;
+}
+
+.main__about__img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 95px;
+
+}
+
+.main__about__text {
+    text-align: center;
+    margin-top: 17px;
 }
