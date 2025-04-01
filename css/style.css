@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --gray-bg: #16140f;
     --yellow: #FFDE4C;
     --yellow2: #FFDD55;
+    --white: #FFFFFF;
+    --black: #000000;
 }
+
+/* main styles */
 
 * {
     position: relative;
@@ -10,6 +16,29 @@
 
 body {
     background: var(--yellow);
+    color: var(--white);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--yellow2);
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 54px 0 0;
+}
+
+.subheader {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 25px 0;
 }
 
 .container {
@@ -25,6 +54,19 @@ body {
     border-radius: 20px;
     background: var(--gray-bg) url("../img/background.jpg") top center no-repeat;
 }
+
+.btn__yellow {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    color: var(--black);
+    background-color: var(--yellow2);
+    border: none;
+    border-radius: 20px;
+    padding: 23px 40px;
+}
+
+/* header */
 
 .header {
     padding: 0 48px;
@@ -67,4 +109,33 @@ body {
 .header__nav__btn::before,
 .header__nav__btn::after {
     content: "";
+}
+
+/* offer */
+
+.main__offer {
+    padding: 0 64px;
+    display: flex;
+}
+
+.main__offer__info {
+    padding: 16px;
+    width: 50%;
+}
+
+.main__offer__info .subheader {
+    padding-right: 20%;
+}
+
+.main__offer__info p {
+    padding-right: 20%;
+    margin-bottom: 0;
+}
+
+.main__offer__info span {
+    color: var(--yellow2);
+}
+
+.main__offer__btn {
+    margin-top: 50px;
 }
